@@ -21,7 +21,7 @@ Sources OSINT (Twitter) → Orchestrateur Python → NLP (spaCy) → PostgreSQL 
 
 ### Installation
 
-`ash
+
 ### Cloner le repository
 git clone https://github.com/sanyamsin/insos-intelligence-pipeline.git
 cd insos-intelligence-pipeline
@@ -37,7 +37,7 @@ pip install -r requirements.txt
 ### Modele spaCy
 python -m spacy download xx_ent_wiki_sm
 
-### Configuration PostgreSQL
+ Configuration PostgreSQL
 Modifier src/config.py avec vos credentials :
 POSTGRES_CONFIG = {
     'host': 'localhost',
