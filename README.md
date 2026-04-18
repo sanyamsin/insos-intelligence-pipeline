@@ -23,23 +23,23 @@ Sources OSINT (Twitter) → Orchestrateur Python → NLP (spaCy) → PostgreSQL 
 
 ### Installation
 
-`ash
-# Cloner le repository
+
+### Cloner le repository
 git clone https://github.com/sanyamsin/insos-intelligence-pipeline.git
 cd insos-intelligence-pipeline
 
-# Environnement virtuel
+### Environnement virtuel
 python -m venv venv
 venv\Scripts\activate  # Windows
-# source venv/bin/activate  # Linux/Mac
+### source venv/bin/activate  # Linux/Mac
 
-# Dependances
+### Dependances
 pip install -r requirements.txt
 
-# Modele spaCy
+### Modele spaCy
 python -m spacy download xx_ent_wiki_sm
 
-# Configuration PostgreSQL
+ Configuration PostgreSQL
 Modifier src/config.py avec vos credentials :
 POSTGRES_CONFIG = {
     'host': 'localhost',
@@ -49,18 +49,18 @@ POSTGRES_CONFIG = {
     'password': 'VOTRE_MOT_DE_PASSE'
 }
 
-# Lancer le pipeline
-# Une execution
+### Lancer le pipeline
+### Une execution
 python scripts/orchestrator.py --mode once
 
-# Mode planifie (toutes les heures)
+### Mode planifie (toutes les heures)
 python scripts/orchestrator.py --mode scheduled
 
-Lancer le dashboard
+### Lancer le dashboard
 streamlit run src/dashboard/app.py
 Acces : http://localhost:8501
 
-Structure du projet 
+### Structure du projet 
 
 | Dossier          | Contenu                      |
 | ---------------- | ---------------------------- |
