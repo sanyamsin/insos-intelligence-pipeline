@@ -1,5 +1,7 @@
 ﻿# 🛡️ OSINT Security Intelligence Pipeline
 
+![Dashboard Preview](docs/dashboard_preview.png)
+
 Pipeline de surveillance open-source pour la securite humanitaire. 
 Concu pour les ONG operant en zones de crise.
 
